@@ -29,3 +29,64 @@ let aqAddButtonOb = document.getElementById("aqAddButton");
     
 aqOb.insertBefore(newNode, aqAddButtonOb);    
 }
+
+function addNewskField() {
+
+let newNode=document.createElement('textarea');
+newNode.classList.add('form-control');
+newNode.classList.add('eqField');
+newNode.classList.add('mt-2');
+newNode.setAttribute("rows", 3);
+newNode.setAttribute("placeholder","Enter Here");
+        
+let skOb = document.getElementById("sk");
+let skAddButtonOb = document.getElementById("skAddButton");
+        
+skOb.insertBefore(newNode, skAddButtonOb);    
+}
+
+function addNewlgField() {
+
+let newNode=document.createElement('textarea');
+newNode.classList.add('form-control');
+newNode.classList.add('eqField');
+newNode.classList.add('mt-2');
+newNode.setAttribute("rows", 3);
+newNode.setAttribute("placeholder","Enter Here");
+            
+let lgOb = document.getElementById("lg");
+let lgAddButtonOb = document.getElementById("lgAddButton");
+            
+lgOb.insertBefore(newNode, lgAddButtonOb);    
+}
+
+function addNewsksField() {
+
+let newNode=document.createElement('textarea');
+newNode.classList.add('form-control');
+newNode.classList.add('eqField');
+newNode.classList.add('mt-2');
+newNode.setAttribute("rows", 3);
+newNode.setAttribute("placeholder","Enter Here");
+                
+let sksOb = document.getElementById("sks");
+let sksAddButtonOb = document.getElementById("sksAddButton");
+                
+sksOb.insertBefore(newNode, sksAddButtonOb);    
+}
+
+function addNewacField() {
+
+let newNode=document.createElement('textarea');
+newNode.classList.add('form-control');
+newNode.classList.add('eqField');
+newNode.classList.add('mt-2');
+newNode.setAttribute("rows", 3);
+newNode.setAttribute("placeholder","Enter Here");
+                    
+let acOb = document.getElementById("ac");
+let acAddButtonOb = document.getElementById("acAddButton");
+                    
+acOb.insertBefore(newNode, acAddButtonOb);    
+}
+
