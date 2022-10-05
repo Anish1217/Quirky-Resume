@@ -90,3 +90,33 @@ let acAddButtonOb = document.getElementById("acAddButton");
 acOb.insertBefore(newNode, acAddButtonOb);    
 }
 
+//generating cv
+function generateCV() {
+  // console.log("generating CV");
+
+
+  let nameField=document.getElementById('nameField').value;
+  
+  let nameT=document.getElementById('nameT');
+
+  nameT.innerHTML = nameField;
+
+  //direct
+
+  document.getElementById("nameT2").innerHTML=nameField;
+  
+  //contact
+  document.getElementById("contactT").innerHTML = document.getElementById("contactField").value;
+
+  //address
+  document.getElementById("addressT").innerHTML = document.getElementById("addressField").value;
+
+  //Mail ID
+  document.getElementById("mailT").innerHTML = document.getElementById("mailField").value;
+
+  //Links
+  document.getElementById("fbT").innerHTML = document.getElementById("fbField").value;
+  document.getElementById("linkedT").innerHTML = document.getElementById("linkedField").value;
+  document.getElementById("gitT").innerHTML = document.getElementById("gitField").value;
+}
+
