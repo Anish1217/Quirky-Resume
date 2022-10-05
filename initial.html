@@ -102,7 +102,7 @@
 
           <div class="form-group mt-2">
            <label for="">Profile Summary</label>
-           <textarea rows="4" placeholder="Enter here your objective." class="form-control"></textarea>
+           <textarea id="objectiveField" rows="4" placeholder="Enter here your objective." class="form-control"></textarea>
           </div>
           
           <div class="form-group mt-2" id="we">
@@ -189,7 +189,9 @@
       </div> 
       
       <div class="container text-center mt-5">
-          <button class="btn btn-primary btn-lg">Generate CV</button>
+          <button onclick="generateCV()" class="btn btn-primary btn-lg">
+            Generate CV
+          </button>
       </div>
     </div>
 
@@ -208,27 +210,29 @@
           />
 
           <div class="container">
-            <p>Anish Vikram Varma</p>
-            <p>+91 6304868350,+91 9030762980</p>
-            <p>Flat no 401, Aditya Gardens, INDIA</p>
-            <p>anishvarmakdfi@gmail.com</p>
+            <p id="nameT">Anish Vikram Varma</p>
+            <p id="contactT">+91 6304868350,+91 9030762980</p>
+            <p id="addressT">Flat no 401, Aditya Gardens, INDIA</p>
+            <p id="mailT">anishvarmakdfi@gmail.com</p>
              
             <hr />
             
             <p>
-              <a href="#1">https://www.Facebook.com/anishvikramvarma</a>
+              <a id="fbT" href="#1">https://www.Facebook.com/anishvikramvarma</a>
             </p>
             <p>
-              <a href="#1">https://www.LinkedIn.com/NAMBURI ANISH VIKRAM VARMA</a>
+              <a id="linkedT" href="#1">https://www.LinkedIn.com/NAMBURI ANISH VIKRAM VARMA</a>
             </p>
             <p>
-              <a href="#1">https://www.GitHub.com/Anish1217</a>
+              <a id="gitT" href="#1">https://www.GitHub.com/Anish1217</a>
             </p>
+
+            <hr />
           </div>
         </div>  
         <div class="col-md-8 py-4">          
           <!-- second col -->
-          <h1 class="text-center" style="font-weight:940">
+          <h1 id="nameT2" class="text-center" style="font-weight:940">
             Anish Vikram Varma
           </h1>
 
@@ -239,7 +243,7 @@
               <h3>Profile Summary</h3>  
             </div>
             <div class="card-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum magni ipsa aspernatur, assumenda praesentium temporibus quasi fugiat nisi natus dolore non ad a perferendis, nostrum atque! Consequuntur sequi, nulla itaque laborum vel alias. Magni fugit exercitationem, vero cum consequatur voluptates. Quia doloremque rerum expedita praesentium numquam ducimus vitae doloribus!</p>
+              <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum magni ipsa aspernatur, assumenda praesentium temporibus quasi fugiat nisi natus dolore non ad a perferendis, nostrum atque! Consequuntur sequi, nulla itaque laborum vel alias. Magni fugit exercitationem, vero cum consequatur voluptates. Quia doloremque rerum expedita praesentium numquam ducimus vitae doloribus!</p>
             </div>
           </div>
 
@@ -250,7 +254,7 @@
               <h3>Work Experience</h3>  
             </div>
             <div class="card-body">
-              <ul>
+              <ul id="weT">
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
@@ -265,7 +269,7 @@
               <h3>Academic Qualifications</h3>  
             </div>
             <div class="card-body">
-              <ul>
+              <ul id="aqT">
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
@@ -280,7 +284,7 @@
               <h3>Key Skills</h3>  
             </div>
             <div class="card-body">
-              <ul>
+              <ul id="skT">
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
@@ -295,7 +299,7 @@
               <h3>Languages</h3>  
             </div>
             <div class="card-body">
-              <ul>
+              <ul id="lgT">
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
@@ -310,7 +314,7 @@
               <h3>Soft Skills</h3>  
             </div>
             <div class="card-body">
-              <ul>
+              <ul id="sksT">
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
@@ -325,12 +329,16 @@
               <h3>Accomplishments</h3>  
             </div>
             <div class="card-body">
-              <ul>
+              <ul id="acT">
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
               </ul>
             </div>
+          </div>
+
+          <div class="container mt-3 text-center">
+            <button onclick="printCV()" class="btn background">Print CV</button>
           </div>
         </div> 
       </div>
