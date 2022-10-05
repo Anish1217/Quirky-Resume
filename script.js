@@ -118,5 +118,20 @@ function generateCV() {
   document.getElementById("fbT").innerHTML = document.getElementById("fbField").value;
   document.getElementById("linkedT").innerHTML = document.getElementById("linkedField").value;
   document.getElementById("gitT").innerHTML = document.getElementById("gitField").value;
+
+  //Profile Summary
+  document.getElementById("objectiveT").innerHTML = document.getElementById("objectiveField").value;
+
+  //work experience
+  
+  let wes = document.getElementsByClassName("weField");
+
+  let str = "";
+
+  for (let e of wes) {
+    str = str + `<li> ${e.value} </li>`;
+  }
+
+  document.getElementById("weT").innerHTML = str;  
 }
 
