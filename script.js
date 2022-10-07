@@ -1,93 +1,93 @@
 // alert("loading")
 function addNewweField() {
-//   console.log("Adding New Field");
 
-let newNode=document.createElement('textarea');
-newNode.classList.add('form-control');
-newNode.classList.add('weField');
-newNode.classList.add('mt-2');
-newNode.setAttribute("rows", 3);
-newNode.setAttribute("placeholder","Enter Here");
+  let newNode = document.createElement('textarea');
+  newNode.classList.add('form-control');
+  newNode.classList.add('weField');
+  newNode.classList.add('mt-2');
+  newNode.setAttribute("rows", 3);
+  newNode.setAttribute("placeholder", "Enter Here");
 
-let weOb = document.getElementById("we");
-let weAddButtonOb = document.getElementById("weAddButton");
+  let weOb = document.getElementById("we");
+  let weAddButtonOB = document.getElementById("weAddButton");
 
-weOb.insertBefore(newNode, weAddButtonOb);
+  weOb.insertBefore(newNode, weAddButtonOB);
 }
+
 
 function addNewaqField() {
 
-let newNode=document.createElement('textarea');
-newNode.classList.add('form-control');
-newNode.classList.add('eqField');
-newNode.classList.add('mt-2');
-newNode.setAttribute("rows", 3);
-newNode.setAttribute("placeholder","Enter Here");
-    
-let aqOb = document.getElementById("aq");
-let aqAddButtonOb = document.getElementById("aqAddButton");
-    
-aqOb.insertBefore(newNode, aqAddButtonOb);    
+  let newNode = document.createElement('textarea');
+  newNode.classList.add('form-control');
+  newNode.classList.add('eqField');
+  newNode.classList.add('mt-2');
+  newNode.setAttribute("rows", 3);
+  newNode.setAttribute("placeholder", "Enter Here");
+
+  let aqOb = document.getElementById("aq");
+  let aqAddButtonOB = document.getElementById("aqAddButton");
+
+  aqOb.insertBefore(newNode, aqAddButtonOB);
 }
 
 function addNewskField() {
 
-let newNode=document.createElement('textarea');
-newNode.classList.add('form-control');
-newNode.classList.add('eqField');
-newNode.classList.add('mt-2');
-newNode.setAttribute("rows", 3);
-newNode.setAttribute("placeholder","Enter Here");
-        
-let skOb = document.getElementById("sk");
-let skAddButtonOb = document.getElementById("skAddButton");
-        
-skOb.insertBefore(newNode, skAddButtonOb);    
+  let newNode = document.createElement('textarea');
+  newNode.classList.add('form-control');
+  newNode.classList.add('eqField');
+  newNode.classList.add('mt-2');
+  newNode.setAttribute("rows", 3);
+  newNode.setAttribute("placeholder", "Enter Here");
+
+  let skOb = document.getElementById("sk");
+  let skAddButtonOb = document.getElementById("skAddButton");
+
+  skOb.insertBefore(newNode, skAddButtonOb);
 }
 
 function addNewlgField() {
 
-let newNode=document.createElement('textarea');
-newNode.classList.add('form-control');
-newNode.classList.add('eqField');
-newNode.classList.add('mt-2');
-newNode.setAttribute("rows", 3);
-newNode.setAttribute("placeholder","Enter Here");
-            
-let lgOb = document.getElementById("lg");
-let lgAddButtonOb = document.getElementById("lgAddButton");
-            
-lgOb.insertBefore(newNode, lgAddButtonOb);    
+  let newNode = document.createElement('textarea');
+  newNode.classList.add('form-control');
+  newNode.classList.add('eqField');
+  newNode.classList.add('mt-2');
+  newNode.setAttribute("rows", 3);
+  newNode.setAttribute("placeholder", "Enter Here");
+
+  let lgOb = document.getElementById("lg");
+  let lgAddButtonOb = document.getElementById("lgAddButton");
+
+  lgOb.insertBefore(newNode, lgAddButtonOb);
 }
 
 function addNewsksField() {
 
-let newNode=document.createElement('textarea');
-newNode.classList.add('form-control');
-newNode.classList.add('eqField');
-newNode.classList.add('mt-2');
-newNode.setAttribute("rows", 3);
-newNode.setAttribute("placeholder","Enter Here");
-                
-let sksOb = document.getElementById("sks");
-let sksAddButtonOb = document.getElementById("sksAddButton");
-                
-sksOb.insertBefore(newNode, sksAddButtonOb);    
+  let newNode = document.createElement('textarea');
+  newNode.classList.add('form-control');
+  newNode.classList.add('eqField');
+  newNode.classList.add('mt-2');
+  newNode.setAttribute("rows", 3);
+  newNode.setAttribute("placeholder", "Enter Here");
+
+  let sksOb = document.getElementById("sks");
+  let sksAddButtonOb = document.getElementById("sksAddButton");
+
+  sksOb.insertBefore(newNode, sksAddButtonOb);
 }
 
 function addNewacField() {
 
-let newNode=document.createElement('textarea');
-newNode.classList.add('form-control');
-newNode.classList.add('eqField');
-newNode.classList.add('mt-2');
-newNode.setAttribute("rows", 3);
-newNode.setAttribute("placeholder","Enter Here");
-                    
-let acOb = document.getElementById("ac");
-let acAddButtonOb = document.getElementById("acAddButton");
-                    
-acOb.insertBefore(newNode, acAddButtonOb);    
+  let newNode = document.createElement('textarea');
+  newNode.classList.add('form-control');
+  newNode.classList.add('eqField');
+  newNode.classList.add('mt-2');
+  newNode.setAttribute("rows", 3);
+  newNode.setAttribute("placeholder", "Enter Here");
+
+  let acOb = document.getElementById("ac");
+  let acAddButtonOb = document.getElementById("acAddButton");
+
+  acOb.insertBefore(newNode, acAddButtonOb);
 }
 
 //generating cv
@@ -95,16 +95,16 @@ function generateCV() {
   // console.log("generating CV");
 
 
-  let nameField=document.getElementById('nameField').value;
-  
-  let nameT=document.getElementById('nameT');
+  let nameField = document.getElementById('nameField').value;
+
+  let nameT = document.getElementById('nameT');
 
   nameT.innerHTML = nameField;
 
   //direct
 
-  document.getElementById("nameT2").innerHTML=nameField;
-  
+  document.getElementById("nameT2").innerHTML = nameField;
+
   //contact
   document.getElementById("contactT").innerHTML = document.getElementById("contactField").value;
 
@@ -123,7 +123,7 @@ function generateCV() {
   document.getElementById("objectiveT").innerHTML = document.getElementById("objectiveField").value;
 
   //work experience
-  
+
   let wes = document.getElementsByClassName("weField");
 
   let str = "";
@@ -132,6 +132,19 @@ function generateCV() {
     str = str + `<li> ${e.value} </li>`;
   }
 
-  document.getElementById("weT").innerHTML = str;  
+  document.getElementById("weT").innerHTML = str;
+
+
+  //Academic Qualifications
+
+  let aqs = document.getElementsByClassName("eqField");
+
+  let str1 = "";
+
+  for (let e of aqs) {
+    str1 += `<li> ${e.value} </li>`;
+  }
+
+  document.getElementById("aqT").innerHTML = str1;
 }
 
