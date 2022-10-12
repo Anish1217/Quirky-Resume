@@ -60,7 +60,7 @@ function addNewlgField() {
   lgOb.insertBefore(newNode, lgAddButtonOb);
 }
 
-function addNewsksField() {
+function addNewksField() {
 
   let newNode = document.createElement('textarea');
   newNode.classList.add('form-control');
@@ -69,10 +69,10 @@ function addNewsksField() {
   newNode.setAttribute("rows", 3);
   newNode.setAttribute("placeholder", "Enter Here");
 
-  let sksOb = document.getElementById("sks");
-  let sksAddButtonOb = document.getElementById("sksAddButton");
+  let ksOb = document.getElementById("ks");
+  let ksAddButtonOb = document.getElementById("ksAddButton");
 
-  sksOb.insertBefore(newNode, sksAddButtonOb);
+  ksOb.insertBefore(newNode, ksAddButtonOb);
 }
 
 function addNewacField() {
@@ -146,5 +146,57 @@ function generateCV() {
   }
 
   document.getElementById("aqT").innerHTML = str1;
+
+  //Key Skills
+
+  
+  let sks = document.getElementsByClassName("keField");
+
+  let str2 = "";
+
+  for (let e of sks) {
+    str2 += `<li> ${e.value} </li>`;
+  }
+
+  document.getElementById("skT").innerHTML = str2;
+
+  //Languages
+
+  
+  let lgs = document.getElementsByClassName("eqField");
+
+  let str3 = "";
+
+  for (let e of lgs) {
+    str3 += `<li> ${e.value} </li>`;
+  }
+
+  document.getElementById("lgT").innerHTML = str3;
+
+  //Soft Skills
+
+  
+  let kss = document.getElementsByClassName("eqField");
+
+  let str4 = "";
+
+  for (let e of kss) {
+    str4 += `<li> ${e.value} </li>`;
+  }
+
+  document.getElementById("ksT").innerHTML = str4;
+
+  //Accomplishments
+
+  
+  let acs = document.getElementsByClassName("eqField");
+
+  let str5 = "";
+
+  for (let e of acs) {
+    str5 += `<li> ${e.value} </li>`;
+  }
+
+  document.getElementById("acT").innerHTML = str5;
 }
 
