@@ -150,7 +150,7 @@ function generateCV() {
   //Key Skills
 
   
-  let sks = document.getElementsByClassName("keField");
+  let sks = document.getElementsByClassName("weField");
 
   let str2 = "";
 
