@@ -19,7 +19,7 @@ function addNewaqField() {
 
   let newNode = document.createElement('textarea');
   newNode.classList.add('form-control');
-  newNode.classList.add('eqField');
+  newNode.classList.add('aqField');
   newNode.classList.add('mt-2');
   newNode.setAttribute("rows", 3);
   newNode.setAttribute("placeholder", "Enter Here");
@@ -30,41 +30,11 @@ function addNewaqField() {
   aqOb.insertBefore(newNode, aqAddButtonOB);
 }
 
-function addNewskField() {
-
-  let newNode = document.createElement('textarea');
-  newNode.classList.add('form-control');
-  newNode.classList.add('eqField');
-  newNode.classList.add('mt-2');
-  newNode.setAttribute("rows", 3);
-  newNode.setAttribute("placeholder", "Enter Here");
-
-  let skOb = document.getElementById("sk");
-  let skAddButtonOb = document.getElementById("skAddButton");
-
-  skOb.insertBefore(newNode, skAddButtonOb);
-}
-
-function addNewlgField() {
-
-  let newNode = document.createElement('textarea');
-  newNode.classList.add('form-control');
-  newNode.classList.add('eqField');
-  newNode.classList.add('mt-2');
-  newNode.setAttribute("rows", 3);
-  newNode.setAttribute("placeholder", "Enter Here");
-
-  let lgOb = document.getElementById("lg");
-  let lgAddButtonOb = document.getElementById("lgAddButton");
-
-  lgOb.insertBefore(newNode, lgAddButtonOb);
-}
-
 function addNewksField() {
 
   let newNode = document.createElement('textarea');
   newNode.classList.add('form-control');
-  newNode.classList.add('eqField');
+  newNode.classList.add('ksField');
   newNode.classList.add('mt-2');
   newNode.setAttribute("rows", 3);
   newNode.setAttribute("placeholder", "Enter Here");
@@ -75,11 +45,41 @@ function addNewksField() {
   ksOb.insertBefore(newNode, ksAddButtonOb);
 }
 
+function addNewlgField() {
+
+  let newNode = document.createElement('textarea');
+  newNode.classList.add('form-control');
+  newNode.classList.add('lgField');
+  newNode.classList.add('mt-2');
+  newNode.setAttribute("rows", 3);
+  newNode.setAttribute("placeholder", "Enter Here");
+
+  let lgOb = document.getElementById("lg");
+  let lgAddButtonOb = document.getElementById("lgAddButton");
+
+  lgOb.insertBefore(newNode, lgAddButtonOb);
+}
+
+function addNewskField() {
+
+  let newNode = document.createElement('textarea');
+  newNode.classList.add('form-control');
+  newNode.classList.add('skField');
+  newNode.classList.add('mt-2');
+  newNode.setAttribute("rows", 3);
+  newNode.setAttribute("placeholder", "Enter Here");
+
+  let skOb = document.getElementById("sk");
+  let skAddButtonOb = document.getElementById("skAddButton");
+
+  skOb.insertBefore(newNode, skAddButtonOb);
+}
+
 function addNewacField() {
 
   let newNode = document.createElement('textarea');
   newNode.classList.add('form-control');
-  newNode.classList.add('eqField');
+  newNode.classList.add('acField');
   newNode.classList.add('mt-2');
   newNode.setAttribute("rows", 3);
   newNode.setAttribute("placeholder", "Enter Here");
@@ -137,7 +137,7 @@ function generateCV() {
 
   //Academic Qualifications
 
-  let aqs = document.getElementsByClassName("eqField");
+  let aqs = document.getElementsByClassName("aqField");
 
   let str1 = "";
 
@@ -150,20 +150,20 @@ function generateCV() {
   //Key Skills
 
   
-  let sks = document.getElementsByClassName("weField");
+  let kss = document.getElementsByClassName("ksField");
 
   let str2 = "";
 
-  for (let e of sks) {
+  for (let e of kss) {
     str2 += `<li> ${e.value} </li>`;
   }
 
-  document.getElementById("skT").innerHTML = str2;
+  document.getElementById("ksT").innerHTML = str2;
 
   //Languages
 
   
-  let lgs = document.getElementsByClassName("eqField");
+  let lgs = document.getElementsByClassName("lgField");
 
   let str3 = "";
 
@@ -176,20 +176,20 @@ function generateCV() {
   //Soft Skills
 
   
-  let kss = document.getElementsByClassName("eqField");
+  let sks = document.getElementsByClassName("skField");
 
   let str4 = "";
 
-  for (let e of kss) {
+  for (let e of sks) {
     str4 += `<li> ${e.value} </li>`;
   }
 
-  document.getElementById("ksT").innerHTML = str4;
+  document.getElementById("skT").innerHTML = str4;
 
   //Accomplishments
 
   
-  let acs = document.getElementsByClassName("eqField");
+  let acs = document.getElementsByClassName("acField");
 
   let str5 = "";
 
