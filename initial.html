@@ -81,25 +81,50 @@
          
         </div>
 
-        <div class="form-group mt-2" id="aq">
-          <label for="">Academic Qualifications</label>
-          <textarea rows="3" placeholder="Enter here your educational qualifications."
-            class="form-control eqfield">          
+
+
+
+
+
+
+        <!--<div class="form-group mt-2" id="aq">
+          <label for="">Academic Qualifications</label> 
+          <textarea rows="3" placeholder="Add a cell and enter your Academic Qualifications"
+            class="form-control aqfield">          
           </textarea>
 
           <div class="container text-center mt-2" id="aqAddButton">
             <button onclick="addNewaqField()" class="btn btn-primary btn-sm">Add</button>
           </div>
 
+        </div>-->
+
+        <div class="form-group mt-2" id="aq">
+          <label for="">Academic Qualifications</label>
+          <textarea rows="3" placeholder="Add a new cell and enter your Educational Qualifications "
+            class="form-control aqfield"></textarea>
+
+          <div class="container text-center mt-2" id="aqAddButton">
+            <button onclick="addNewaqField()" class="btn btn-primary btn-sm">
+              Add</button>
+          </div>
+
         </div>
 
-        <div class="form-group mt-2" id="sk">
-          <label for="">Key Skills</label>
-          <textarea rows="3" placeholder="Enter here your proffesional skills."
-            class="form-control wefield"></textarea>
 
-          <div class="container text-center mt-2" id="skAddButton">
-            <button onclick="addNewskField()" class="btn btn-primary btn-sm">
+
+
+
+
+
+
+        <div class="form-group mt-2" id="ks">
+          <label for="">Key Skills</label>
+          <textarea rows="3" placeholder="Add a new cell and enter your Professional Skills "
+            class="form-control ksfield"></textarea>
+
+          <div class="container text-center mt-2" id="ksAddButton">
+            <button onclick="addNewksField()" class="btn btn-primary btn-sm">
               Add</button>
           </div>
 
@@ -107,8 +132,8 @@
 
         <div class="form-group mt-2" id="lg">
           <label for="">Languages</label>
-          <textarea rows="3" placeholder="Enter here the languages you can speak."
-            class="form-control eqfield"></textarea>
+          <textarea rows="3" placeholder="Add a cell and enter the languages you can speak."
+            class="form-control lgfield"></textarea>
 
           <div class="container text-center mt-2" id="lgAddButton">
             <button onclick="addNewlgField()" class="btn btn-primary btn-sm">
@@ -116,20 +141,20 @@
           </div>
         </div>
 
-        <div class="form-group mt-2" id="ks">
+        <div class="form-group mt-2" id="sk">
           <label for="">Soft Skills</label>
-          <textarea rows="3" placeholder="Enter here your soft skills." class="form-control eqfield"></textarea>
+          <textarea rows="3" placeholder="Add a cell and enter your soft skills." class="form-control skfield"></textarea>
 
-          <div class="container text-center mt-2" id="ksAddButton">
-            <button onclick="addNewksField()" class="btn btn-primary btn-sm">
+          <div class="container text-center mt-2" id="skAddButton">
+            <button onclick="addNewskField()" class="btn btn-primary btn-sm">
               Add</button>
           </div>
         </div>
 
         <div class="form-group mt-2" id="ac">
           <label for="">Accomplishments</label>
-          <textarea rows="3" placeholder="Enter here your significant Achievements."
-            class="form-control eqfield"></textarea>
+          <textarea rows="3" placeholder="Add a cell and enter your significant Achievements."
+            class="form-control acfield"></textarea>
 
           <div class="container text-center mt-2" id="acAddButton">
             <button onclick="addNewacField()" class="btn btn-primary btn-sm">
@@ -212,10 +237,10 @@
             </ul>
           </div>
         </div>
+     
 
-
-        <!-- Academic Qualifications -->
-
+        <!-- Academic Qualifications -->     
+  
         <div class="card mt-3">
           <div class="card-header background">
             <h3>Academic Qualifications</h3>
@@ -236,7 +261,7 @@
             <h3>Key Skills</h3>
           </div>
           <div class="card-body">
-            <ul id="skT">
+            <ul id="ksT">
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
@@ -266,7 +291,7 @@
             <h3>Soft Skills</h3>
           </div>
           <div class="card-body">
-            <ul id="ksT">
+            <ul id="skT">
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, corporis?</li>
