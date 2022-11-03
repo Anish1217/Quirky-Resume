@@ -198,5 +198,13 @@ function generateCV() {
   }
 
   document.getElementById("acT").innerHTML = str5;
+
+  document.getElementById("cv-form").style.display= "none";
+  document.getElementById("cv-template").style.display= "block";
+}
+
+//print cv
+function printCV() {
+  window.print();
 }
 
